@@ -8,8 +8,8 @@ app.use(cors());
 app.use(express.json());
 
 
-app.listen(5000, () => {
-    console.log("server has started on port 5000")
+app.listen(5001, () => {
+    console.log("server has started on port 5001")
 })
 
 app.post("/todos", async (req, res) => {
@@ -79,7 +79,3 @@ app.delete("/todos/:id", async (req, res) => {
       console.log(err.message);
     }
   });
-  
-  app.listen(5000, () => {
-    console.log("server has started on port 5000");
-  }); 
